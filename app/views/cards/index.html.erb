@@ -1,0 +1,8 @@
+<h1><%= @plan.title %></h1>
+
+<%= render 'form' %>
+
+<pre id="card">
+<%= @plan.cards.map {|v| "#{v.point}pt (#{v.note})\n" }.join %>
+</pre>
+

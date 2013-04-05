@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @plan.title %>
+  </p>
+
+
+<%= link_to 'Destroy', @plan, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn' %>
+<%= link_to 'Edit', edit_plan_path(@plan), class:'btn' %>
+
+<%= link_to 'New Point', plan_cards_path(@plan), class:'btn' %>
